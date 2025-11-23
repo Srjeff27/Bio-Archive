@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Archive: Synthetic DNA Storage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bgCanvas"></canvas>
+
+<div class="container">
+    <header>
+        <h1>Bio-Archive <span style="font-size:1rem; vertical-align: super; color: #555;">v1.0</span></h1>
+        <div class="subtitle">SYSTEM PEYIMPANAN DATA BERBASIS DNA SINTETIS</div>
+        <div class="credits">ENGINEER: JEFRI HAMID JAYA & SIFRA POALUSIA</div>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <h2><span style="color:var(--neon-green)">01</span> // ENKODER DIGITAL</h2>
+            <p style="font-size: 0.9rem; color:#aaa;">Input teks untuk konversi ke kode kuarterner (A/C/G/T).</p>
+            
+            <input type="text" id="inputData" placeholder="> Masukkan pesan rahasia..." autocomplete="off">
+            <button class="btn" onclick="processData()">ENKRIPSI KE DNA</button>
+            
+            <div style="margin-top: 20px;">
+                <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:#666;">
+                    <span>BINARY STREAM</span>
+                    <span id="bitRate">0 bits</span>
+                </div>
+                <div id="binaryDisplay" style="font-family:'Fira Code'; font-size:0.7rem; color:#444; margin-top:5px; height:20px; overflow:hidden;">Waiting for input...</div>
+            </div>
+
+            <div style="margin-top: 15px;">
+                <span style="font-size:0.8rem; color:#666;">DNA SEQUENCE OUTPUT</span>
+                <div class="dna-display" id="dnaOutput">
+                    <span style="color:#444">// System Ready.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><span style="color:var(--neon-green)">02</span> // SASIS BIOLOGIS</h2>
+            <p style="font-size: 0.9rem; color:#aaa;">Host: <i>Nicotiana benthamiana</i> (Tembakau Liar)</p>
+            
+            <div class="plant-monitor">
+                <div class="scan-line"></div>
+                <div class="hologram-plant" id="plantIcon">🌱</div>
+                <div id="statusPlant" style="margin-top: 15px; font-weight: bold; color: #666;">STATUS: STANDBY</div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-val">455</div>
+                    <div class="stat-label">EB/gram</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-val">>2K</div>
+                    <div class="stat-label">Thn (Usia)</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-val">0W</div>
+                    <div class="stat-label">Energi</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><span style="color:var(--neon-green)">03</span> // METRIK PERFORMA</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>PARAMETER</th>
+                        <th>HARD DRIVE</th>
+                        <th style="color:var(--neon-green)">BIO-ARCHIVE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Densitas</td>
+                        <td>~1 TB/in²</td>
+                        <td class="tech-highlight">455 Exabytes/g</td>
+                    </tr>
+                    <tr>
+                        <td>Durabilitas</td>
+                        <td>5 Tahun</td>
+                        <td class="tech-highlight">Ribuan Tahun</td>
+                    </tr>
+                    <tr>
+                        <td>Power</td>
+                        <td>Listrik Aktif</td>
+                        <td class="tech-highlight">Fotosintesis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2><span style="color:var(--neon-green)">04</span> // DATA ECOLOGY</h2>
+            <p style="font-size: 0.9rem; color:#aaa;">Integrasi konservasi data dan keanekaragaman hayati.</p>
+            <ul>
+                <li>Penyimpanan "Cold Storage" pada biji tanaman.</li>
+                <li>Mitigasi krisis energi data center ("Data Warming").</li>
+                <li>Media edukasi interdisipliner (Bio-Informatika).</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
