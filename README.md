@@ -70,8 +70,11 @@ Proyek ini bersifat *client-side* sepenuhnya (Static Web), tidak memerlukan inst
 | **Dashboard Utama** | **Proses Encoding** |
 | :---: | :---: |
 | *Tampilan full dashboard dengan latar belakang animasi matrix.* | *Visualisasi pengetikan sekuens DNA secara real-time.* |
+<img width="1795" height="937" alt="image" src="https://github.com/user-attachments/assets/5b862593-b3f6-4bb8-b497-cde6fcae1729" />
 
-*(Ganti bagian ini dengan screenshot asli setelah kamu menjalankannya)*
+<img width="1471" height="948" alt="image" src="https://github.com/user-attachments/assets/19925a92-dc59-4298-a087-948076dc021c" />
+
+
 
 ---
 
